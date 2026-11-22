@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="7086bt 官方网站：关于 7086bt 地址已失效的说明与品牌视频内容门户，持续运营的原创高清视频社区。">
+  <title>7086bt - 地址已失效说明 | 官方视频内容门户</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M22 18l24 14-24 14z' fill='%2338bdf8'/%3E%3C/svg%3E">
+  <style>
+    :root{
+      --bt-bg:#0b1120;
+      --bt-bg-soft:#111a2c;
+      --bt-panel:#0e1728;
+      --bt-line:#1f2d47;
+      --bt-text:#e6edf7;
+      --bt-muted:#9aa9c2;
+      --bt-accent:#38bdf8;
+      --bt-accent-2:#22d3ee;
+      --bt-hot:#f472b6;
+      --bt-radius:16px;
+      --bt-shadow:0 18px 50px rgba(0,0,0,.45);
+      --bt-header-h:112px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Helvetica Neue","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+      background:radial-gradient(1200px 600px at 85% -10%,rgba(56,189,248,.13),transparent 60%),var(--bt-bg);
+      color:var(--bt-text);
+      line-height:1.75;
+      font-size:16px;
+    }
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    h1,h2,h3,h4{margin:0;line-height:1.3}
+    p{margin:0 0 1em}
+    ul{margin:0;padding-left:1.2em}
+    button{font:inherit;cursor:pointer}
+
+    .bt-skip{position:absolute;left:-9999px}
+    .bt-wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+
+    /* ===== 吸顶区 ===== */
+    .bt-sticky-head{
+      position:sticky;top:0;z-index:60;
+      background:rgba(11,17,32,.92);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--bt-line);
+    }
+    .bt-notice{
+      background:linear-gradient(90deg,rgba(56,189,248,.16),rgba(34,211,238,.06) 55%,transparent);
+      border-bottom:1px solid var(--bt-line);
+      font-size:.86rem;
+      color:#cfe9fb;
+    }
+    .bt-notice .bt-wrap{
+      display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+      min-height:40px;padding-block:6px;
+    }
+    .bt-notice-tag{
+      flex:none;font-size:.72rem;letter-spacing:.12em;
+      background:var(--bt-accent);color:#04121f;
+      padding:2px 10px;border-radius:999px;font-weight:700;
+    }
+    .bt-notice-text{min-width:0}
+    .bt-notice a{color:var(--bt-accent);border-bottom:1px dashed rgba(56,189,248,.5)}
+
+    .bt-header .bt-wrap{
+      display:flex;align-items:center;gap:20px;
+      min-height:72px;flex-wrap:wrap;
+    }
+    .bt-logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em;font-size:1.15rem;flex:none}
+    .bt-logo-mark{
+      width:36px;height:36px;border-radius:11px;flex:none;
+      background:linear-gradient(140deg,var(--bt-accent),#6366f1);
+      display:grid;place-items:center;color:#04121f;font-size:.9rem;font-weight:900;
+    }
+    .bt-logo small{display:block;font-size:.64rem;font-weight:500;letter-spacing:.18em;color:var(--bt-muted)}
+    .bt-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+    .bt-nav a{
+      padding:8px 12px;border-radius:10px;font-size:.9rem;color:var(--bt-muted);
+      transition:.2s;
+    }
+    .bt-nav a:hover,.bt-nav a:focus-visible{color:#fff;background:rgba(56,189,248,.12)}
+    .bt-search{
+      display:flex;align-items:center;gap:8px;
+      background:var(--bt-panel);border:1px solid var(--bt-line);
+      border-radius:999px;padding:6px 8px 6px 14px;min-width:220px;flex:1 1 200px;max-width:320px;
+    }
+    .bt-search input{
+      flex:1;min-width:0;background:transparent;border:0;outline:none;color:var(--bt-text);font-size:.88rem;
+    }
+    .bt-search input::placeholder{color:#6c7d99}
+    .bt-search button{
+      border:0;border-radius:999px;background:var(--bt-accent);color:#04121f;
+      font-weight:700;font-size:.8rem;padding:6px 14px;flex:none;
+    }
+    .bt-search-feedback{
+      flex-basis:100%;font-size:.78rem;color:var(--bt-accent-2);min-height:0;
+    }
+    .bt-burger{
+      display:none;border:1px solid var(--bt-line);background:var(--bt-panel);
+      color:var(--bt-text);border-radius:10px;padding:8px 12px;
+    }
+
+    /* ===== 通用排版 ===== */
+    .bt-section{padding:64px 0 8px;scroll-margin-top:var(--bt-header-h)}
+    .bt-kicker{
+      font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;
+      color:var(--bt-accent);font-weight:700;margin-bottom:10px;
+    }
+    .bt-h2{font-size:clamp(1.4rem,2.4vw,2rem);margin-bottom:10px}
+    .bt-lead{color:var(--bt-muted);max-width:70ch;margin-bottom:26px}
+    .bt-h3{font-size:1.06rem;margin-bottom:6px}
+
+    /* ===== 首屏：左文右图 6:4 ===== */
+    .bt-hero{
+      display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);
+      gap:38px;align-items:center;padding:52px 0 12px;
+    }
+    .bt-hero h1{font-size:clamp(2rem,4.2vw,3.1rem);letter-spacing:-.01em;margin-bottom:14px}
+    .bt-hero h1 span{color:var(--bt-accent)}
+    .bt-hero-badge{
+      display:inline-flex;align-items:center;gap:8px;
+      border:1px solid rgba(56,189,248,.4);border-radius:999px;
+      padding:5px 14px;font-size:.76rem;letter-spacing:.14em;color:var(--bt-accent);margin-bottom:16px;
+    }
+    .bt-hero-intro{color:#c5d3e6;max-width:60ch}
+    .bt-hero-stats{display:flex;gap:26px;flex-wrap:wrap;margin:22px 0 26px;list-style:none;padding:0}
+    .bt-hero-stats li{min-width:110px}
+    .bt-hero-stats b{display:block;font-size:1.5rem;color:#fff;letter-spacing:-.02em}
+    .bt-hero-stats span{font-size:.78rem;color:var(--bt-muted)}
+    .bt-btn-row{display:flex;gap:12px;flex-wrap:wrap}
+    .bt-btn{
+      display:inline-flex;align-items:center;gap:8px;
+      border-radius:999px;padding:11px 22px;font-size:.9rem;font-weight:700;
+      border:1px solid transparent;transition:.2s;
+    }
+    .bt-btn-primary{background:linear-gradient(120deg,var(--bt-accent),var(--bt-accent-2));color:#04121f}
+    .bt-btn-primary:hover{filter:brightness(1.1);transform:translateY(-1px)}
+    .bt-btn-ghost{border-color:var(--bt-line);color:var(--bt-text)}
+    .bt-btn-ghost:hover{border-color:var(--bt-accent);color:var(--bt-accent)}
+    .bt-hero-visual{
+      border-radius:22px;overflow:hidden;border:1px solid var(--bt-line);
+      box-shadow:var(--bt-shadow);background:var(--bt-panel);
+    }
+    .bt-hero-visual figcaption{
+      padding:12px 16px;font-size:.79rem;color:var(--bt-muted);border-top:1px solid var(--bt-line);
+    }
+    .bt-hero-figure{margin:0}
+
+    /* ===== 视频区 两列图文卡片 ===== */
+    .bt-video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+    .bt-video-card{
+      background:var(--bt-panel);border:1px solid var(--bt-line);border-radius:var(--bt-radius);
+      overflow:hidden;display:flex;flex-direction:column;transition:.25s;
+    }
+    .bt-video-card:hover{border-color:rgba(56,189,248,.5);transform:translateY(-3px)}
+    .bt-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0a1322}
+    .bt-thumb img{width:100%;height:100%;object-fit:cover}
+    .bt-thumb-play{
+      position:absolute;inset:auto 12px 12px auto;
+      width:38px;height:38px;border-radius:50%;
+      background:rgba(4,18,31,.7);border:1px solid rgba(255,255,255,.35);
+      display:grid;place-items:center;color:#fff;font-size:.72rem;font-weight:700;
+    }
+    .bt-video-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+    .bt-tag-row{display:flex;gap:6px;flex-wrap:wrap}
+    .bt-tag{
+      font-size:.7rem;padding:2px 9px;border-radius:999px;
+      background:rgba(56,189,248,.12);color:var(--bt-accent);border:1px solid rgba(56,189,248,.25);
+    }
+    .bt-tag-hot{background:rgba(244,114,182,.12);color:var(--bt-hot);border-color:rgba(244,114,182,.3)}
+    .bt-video-meta{font-size:.78rem;color:var(--bt-muted);display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .bt-video-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+    .bt-act{
+      border:1px solid var(--bt-line);background:transparent;color:var(--bt-muted);
+      border-radius:999px;padding:4px 12px;font-size:.76rem;transition:.2s;
+    }
+    .bt-act:hover{color:#fff;border-color:var(--bt-accent)}
+    .bt-act.is-liked{color:var(--bt-hot);border-color:rgba(244,114,182,.5)}
+    .bt-act.is-saved{color:var(--bt-accent-2);border-color:rgba(34,211,238,.55)}
+
+    /* 单列图文列表 */
+    .bt-list{display:flex;flex-direction:column;gap:2px;margin-top:6px}
+    .bt-list-item{
+      display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 20px;
+      padding:16px 0;border-bottom:1px dashed var(--bt-line);align-items:start;
+    }
+    .bt-list-item:last-child{border-bottom:0}
+    .bt-list-item h3{font-size:.98rem}
+    .bt-list-item p{font-size:.85rem;color:var(--bt-muted);margin:4px 0 0}
+    .bt-list-meta{font-size:.76rem;color:#7f90ab;white-space:nowrap;text-align:right}
+    .bt-list-cta{grid-column:1/-1;display:flex;gap:8px;flex-wrap:wrap}
+
+    /* ===== 图文索引 ===== */
+    .bt-index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .bt-index-card{
+      border:1px solid var(--bt-line);border-radius:var(--bt-radius);overflow:hidden;
+      background:linear-gradient(180deg,var(--bt-bg-soft),var(--bt-panel));
+    }
+    .bt-index-card .bt-thumb{aspect-ratio:16/10}
+    .bt-index-body{padding:15px 16px 18px}
+    .bt-index-body p{font-size:.85rem;color:var(--bt-muted);margin:6px 0 0}
+
+    /* ===== 作者区 双列简介 ===== */
+    .bt-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .bt-author{
+      border:1px solid var(--bt-line);border-radius:var(--bt-radius);padding:20px;
+      background:var(--bt-panel);display:flex;gap:16px;align-items:flex-start;transition:.2s;
+    }
+    .bt-author:hover{border-color:rgba(56,189,248,.45)}
+    .bt-avatar{
+      width:54px;height:54px;border-radius:16px;flex:none;display:grid;place-items:center;
+      font-weight:800;font-size:1.1rem;color:#04121f;
+    }
+    .bt-avatar-a{background:linear-gradient(140deg,#38bdf8,#818cf8)}
+    .bt-avatar-b{background:linear-gradient(140deg,#f472b6,#fb923c)}
+    .bt-avatar-c{background:linear-gradient(140deg,#34d399,#22d3ee)}
+    .bt-avatar-d{background:linear-gradient(140deg,#fbbf24,#f87171)}
+    .bt-author-info{min-width:0}
+    .bt-author-info h3{font-size:1rem}
+    .bt-author-field{font-size:.76rem;color:var(--bt-accent);margin-bottom:4px}
+    .bt-author-stat{font-size:.76rem;color:var(--bt-muted);margin-bottom:6px}
+    .bt-author-info p{font-size:.84rem;color:#b8c6da;margin:0}
+    .bt-author-more{
+      border:1px solid var(--bt-line);background:transparent;color:var(--bt-accent);
+      font-size:.74rem;border-radius:999px;padding:3px 12px;margin-top:10px;
+    }
+
+    /* ===== 评论 双列短评 ===== */
+    .bt-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .bt-comment{
+      background:var(--bt-panel);border:1px solid var(--bt-line);border-radius:14px;
+      padding:16px 18px;font-size:.88rem;color:#c6d3e5;
+    }
+    .bt-comment header{display:flex;justify-content:space-between;gap:10px;font-size:.78rem;color:var(--bt-muted);margin-bottom:6px}
+    .bt-stars{color:#fbbf24;letter-spacing:.1em}
+    .bt-score{
+      display:flex;gap:22px;flex-wrap:wrap;align-items:center;margin-bottom:24px;
+      padding:18px 20px;border:1px solid var(--bt-line);border-radius:var(--bt-radius);
+      background:linear-gradient(120deg,rgba(56,189,248,.08),transparent);
+    }
+    .bt-score b{font-size:2rem;color:#fff}
+    .bt-score small{color:var(--bt-muted);font-size:.78rem}
+
+    /* ===== 解析 ===== */
+    .bt-essay{max-width:76ch}
+    .bt-essay h3{margin-top:26px;color:#fff}
+    .bt-essay p{color:#c1cfe2;font-size:.94rem}
+    .bt-essay blockquote{
+      margin:22px 0;padding:14px 20px;border-left:3px solid var(--bt-accent);
+      background:rgba(56,189,248,.07);border-radius:0 12px 12px 0;color:#cfe0f3;font-size:.9rem;
+    }
+
+    /* ===== FAQ ===== */
+    .bt-faq{display:grid;gap:10px;max-width:860px}
+    .bt-faq details{
+      border:1px solid var(--bt-line);border-radius:12px;background:var(--bt-panel);padding:14px 18px;
+    }
+    .bt-faq summary{cursor:pointer;font-weight:600;font-size:.94rem}
+    .bt-faq details[open]{border-color:rgba(56,189,248,.45)}
+    .bt-faq p{margin:10px 0 0;font-size:.87rem;color:var(--bt-muted)}
+
+    /* ===== 动态/合作 ===== */
+    .bt-two-col{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:26px}
+    .bt-news li{padding:13px 0;border-bottom:1px dashed var(--bt-line);font-size:.9rem;color:#c4d2e5}
+    .bt-news li:last-child{border-bottom:0}
+    .bt-news time{display:block;font-size:.74rem;color:#7f90ab;margin-bottom:2px}
+    .bt-partners{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
+    .bt-partners li{
+      flex:1 1 120px;border:1px solid var(--bt-line);border-radius:12px;
+      padding:14px 16px;font-size:.85rem;color:#b9c8dc;background:var(--bt-bg-soft);
+    }
+    .bt-partners b{display:block;color:#fff;font-size:.9rem}
+    .bt-partners small{font-size:.72rem;color:#7f90ab}
+
+    /* ===== 页脚 ===== */
+    .bt-footer{margin-top:64px;border-top:1px solid var(--bt-line);background:#08101d;padding:44px 0 26px}
+    .bt-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+    .bt-footer h4{font-size:.88rem;color:#fff;margin-bottom:10px}
+    .bt-footer ul{list-style:none;padding:0;display:grid;gap:7px;font-size:.84rem;color:var(--bt-muted)}
+    .bt-footer p{font-size:.82rem;color:var(--bt-muted)}
+    .bt-footer-bottom{
+      margin-top:30px;padding-top:18px;border-top:1px solid var(--bt-line);
+      display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;
+      font-size:.76rem;color:#71829c;
+    }
+
+    /* ===== 弹层 / toast ===== */
+    .bt-modal-mask{
+      position:fixed;inset:0;background:rgba(3,7,14,.72);z-index:100;
+      display:none;place-items:center;padding:20px;
+    }
+    .bt-modal-mask.is-open{display:grid}
+    .bt-modal{
+      width:min(520px,100%);background:var(--bt-bg-soft);border:1px solid var(--bt-line);
+      border-radius:18px;padding:24px;box-shadow:var(--bt-shadow);max-height:86vh;overflow:auto;
+    }
+    .bt-modal h3{margin-bottom:10px}
+    .bt-modal p{font-size:.88rem;color:var(--bt-muted)}
+    .bt-modal-close{
+      float:right;border:1px solid var(--bt-line);background:transparent;color:var(--bt-muted);
+      border-radius:999px;width:30px;height:30px;line-height:1;
+    }
+    .bt-field{display:grid;gap:6px;margin-top:12px;font-size:.84rem;color:#b9c8dc}
+    .bt-field input,.bt-field textarea{
+      background:var(--bt-bg);border:1px solid var(--bt-line);color:var(--bt-text);
+      border-radius:10px;padding:9px 12px;font:inherit;font-size:.86rem;outline:none;width:100%;
+    }
+    .bt-field input:focus,.bt-field textarea:focus{border-color:var(--bt-accent)}
+    .bt-toast{
+      position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);
+      background:#0f2033;border:1px solid rgba(56,189,248,.5);color:#e6f4ff;
+      padding:10px 20px;border-radius:999px;font-size:.85rem;z-index:120;
+      opacity:0;pointer-events:none;transition:.3s;
+    }
+    .bt-toast.is-on{opacity:1;transform:translate(-50%,0)}
+
+    .bt-backtop{
+      position:fixed;right:22px;bottom:26px;z-index:90;
+      width:44px;height:44px;border-radius:50%;border:1px solid var(--bt-line);
+      background:var(--bt-panel);color:var(--bt-accent);font-size:1rem;
+      display:none;place-items:center;
+    }
+    .bt-backtop.is-on{display:grid}
+
+    /* ===== 响应式 ===== */
+    @media (max-width:960px){
+      .bt-hero{grid-template-columns:1fr;gap:26px;padding-top:34px}
+      .bt-video-grid,.bt-authors,.bt-comments,.bt-index,.bt-two-col{grid-template-columns:1fr}
+      .bt-footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:720px){
+      .bt-nav{
+        display:none;flex-basis:100%;flex-direction:column;gap:2px;
+        border-top:1px solid var(--bt-line);padding-top:10px;margin-left:0;
+      }
+      .bt-nav.is-open{display:flex}
+      .bt-burger{display:block;margin-left:auto}
+      .bt-search{order:5;max-width:none;flex-basis:100%}
+      .bt-header .bt-wrap{min-height:64px;padding-block:8px}
+      :root{--bt-header-h:124px}
+      .bt-section{padding-top:48px}
+      .bt-footer-grid{grid-template-columns:1fr}
+    }
+    @media (prefers-reduced-motion:reduce){
+      *{transition:none!important;animation:none!important}
+      html{scroll-behavior:auto}
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+  <div class="bt-sticky-head" id="btTop">
+    <div class="bt-notice">
+      <div class="bt-wrap">
+        <span class="bt-notice-tag">最新公告</span>
+        <span class="bt-notice-text">7086bt 地址已失效，官方已在「品牌公告」专区发布《关于 7086bt 访问地址变更的说明》，并同步开放新一期原创视频企划报名通道。<a href="#btNews">查看详情</a></span>
+      </div>
+    </div>
+    <header class="bt-header">
+      <div class="bt-wrap">
+        <a class="bt-logo" href="#btTop">
+          <span class="bt-logo-mark" aria-hidden="true">70</span>
+          <span>7086bt<small>OFFICIAL VIDEO</small></span>
+        </a>
+        <button class="bt-burger" id="btBurger" aria-expanded="false" aria-controls="btNav">菜单</button>
+        <nav class="bt-nav" id="btNav" aria-label="主导航">
+          <a href="#btVideos">精品内容</a>
+          <a href="#btEssay">品牌解析</a>
+          <a href="#btAuthors">创作者</a>
+          <a href="#btReviews">社区口碑</a>
+          <a href="#btFaq">帮助中心</a>
+          <a href="#btNews">官方动态</a>
+        </nav>
+        <form class="bt-search" id="btSearchForm" role="search">
+          <input id="btSearchInput" type="search" placeholder="搜索 7086bt 视频、创作者或专题" aria-label="站内搜索">
+          <button type="submit">搜索</button>
+          <div class="bt-search-feedback" id="btSearchFeedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <!-- 首屏：左文右侧大图 6:4 + 数据条 -->
+    <section class="bt-wrap bt-hero" aria-labelledby="btHeroTitle">
+      <div>
+        <span class="bt-hero-badge">官方网站 · 品牌视频门户</span>
+        <h1 id="btHeroTitle">7086bt</h1>
+        <p class="bt-hero-intro">
+          作为持续运营的原创视频内容平台，7086bt 官方网站以高清、正版、专业的内容生态服务社区用户与创作者。近期「7086bt 地址已失效」引发关注，我们在此说明：原有访问路径调整，品牌内容与服务主体不变，官网仍持续更新精品内容与官方发布。
+        </p>
+        <ul class="bt-hero-stats">
+          <li><b>1,280+</b><span>原创高清视频</span></li>
+          <li><b>96.4万</b><span>社区累计互动</span></li>
+          <li><b>4.9 / 5</b><span>用户口碑评分</span></li>
+        </ul>
+        <div class="bt-btn-row">
+          <a class="bt-btn bt-btn-primary" href="#btVideos">进入精品内容</a>
+          <a class="bt-btn bt-btn-ghost" href="#btEssay">了解品牌说明</a>
+          <button class="bt-btn bt-btn-ghost" type="button" data-bt-modal="submitModal">投稿与报名</button>
+        </div>
+      </div>
+      <figure class="bt-hero-figure bt-hero-visual">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1a2e'/%3E%3Cstop offset='1' stop-color='%23143254'/%3E%3C/linearGradient%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2338bdf8'/%3E%3Cstop offset='1' stop-color='%236366f1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g)'/%3E%3Ccircle cx='640' cy='120' r='150' fill='%2338bdf8' opacity='.18'/%3E%3Ccircle cx='140' cy='500' r='190' fill='%236366f1' opacity='.2'/%3E%3Crect x='90' y='150' width='420' height='260' rx='22' fill='%230d1b30' stroke='%2338bdf8' stroke-opacity='.5' stroke-width='2'/%3E%3Cpath d='M250 210l120 70-120 70z' fill='url(%23a)'/%3E%3Crect x='90' y='438' width='300' height='14' rx='7' fill='%2338bdf8' opacity='.75'/%3E%3Crect x='90' y='466' width='200' height='10' rx='5' fill='%2364748b'/%3E%3Ccircle cx='600' cy='360' r='86' fill='none' stroke='%2322d3ee' stroke-width='3' stroke-dasharray='10 9' opacity='.8'/%3E%3Ccircle cx='600' cy='360' r='46' fill='%2322d3ee' opacity='.22'/%3E%3Ctext x='600' y='368' font-family='sans-serif' font-size='26' fill='%23e0f2fe' text-anchor='middle'%3E7086bt%3C/text%3E%3C/svg%3E" alt="7086bt 官方品牌视频门户主视觉，播放界面与地址变更说明图形" width="800" height="600">
+        <figcaption>官方发布：7086bt 品牌主视觉 · 地址已失效说明页同步上线</figcaption>
+      </figure>
+    </section>
+
+    <!-- 视频区：两列图文卡片 -->
+    <section class="bt-wrap bt-section" id="btVideos" aria-labelledby="btVideosTitle">
+      <p class="bt-kicker">精品内容 · 官方发布</p>
+      <h2 class="bt-h2" id="btVideosTitle">7086bt 视频精选：地址失效后，内容仍在持续更新</h2>
+      <p class="bt-lead">围绕 7086bt 的原创视频与社区记录，覆盖品牌说明、实用技巧与创作幕后。以下为重点推荐条目，其余以文字列表呈现，方便快速浏览。</p>
+
+      <div class="bt-video-grid">
+        <article class="bt-video-card">
+          <div class="bt-thumb">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23131f36'/%3E%3Cstop offset='1' stop-color='%230b2b45'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23v1)'/%3E%3Crect x='60' y='70' width='330' height='200' rx='16' fill='%230d1b30' stroke='%2338bdf8' stroke-opacity='.6'/%3E%3Cpath d='M200 120l80 50-80 50z' fill='%2338bdf8'/%3E%3Crect x='430' y='90' width='300' height='16' rx='8' fill='%2338bdf8' opacity='.7'/%3E%3Crect x='430' y='124' width='220' height='12' rx='6' fill='%2364748b'/%3E%3Crect x='430' y='152' width='260' height='12' rx='6' fill='%2364748b' opacity='.7'/%3E%3Crect x='60' y='310' width='670' height='70' rx='14' fill='%230e2338'/%3E%3Ccircle cx='110' cy='345' r='16' fill='%2322d3ee'/%3E%3Crect x='140' y='336' width='300' height='10' rx='5' fill='%2394a3b8'/%3E%3Crect x='140' y='356' width='180' height='8' rx='4' fill='%23475569'/%3E%3C/svg%3E" alt="7086bt 地址失效官方说明视频封面，播放键与公告画面" width="800" height="450">
+            <span class="bt-thumb-play">播放</span>
+          </div>
+          <div class="bt-video-body">
+            <div class="bt-tag-row"><span class="bt-tag bt-tag-hot">官方说明</span><span class="bt-tag">品牌动态</span></div>
+            <h3 class="bt-h3">7086bt 地址已失效？官方三分钟说明</h3>
+            <p style="font-size:.85rem;color:var(--bt-muted);margin:0">以图文与实拍镜头解释 7086bt 地址调整原因、内容迁移安排与后续访问方式，避免社区成员误判。内容由官方运营组出品。</p>
+            <div class="bt-video-meta"><span>7086bt 官方</span><span>播放 12.6万</span><span>点赞 8,240</span><span>收藏 3,112</span></div>
+            <div class="bt-video-actions">
+              <button class="bt-act" type="button" data-bt-like>点赞</button>
+              <button class="bt-act" type="button" data-bt-save>收藏</button>
+              <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bt-video-card">
+          <div class="bt-thumb">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='v2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231a1030'/%3E%3Cstop offset='1' stop-color='%23101b33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23v2)'/%3E%3Ccircle cx='600' cy='120' r='90' fill='%23f472b6' opacity='.22'/%3E%3Ccircle cx='200' cy='340' r='120' fill='%2338bdf8' opacity='.18'/%3E%3Crect x='70' y='90' width='280' height='260' rx='18' fill='%230c1728' stroke='%23f472b6' stroke-opacity='.5'/%3E%3Cpath d='M160 160l70 40-70 40z' fill='%23f472b6'/%3E%3Crect x='400' y='110' width='330' height='14' rx='7' fill='%23f472b6' opacity='.65'/%3E%3Crect x='400' y='142' width='250' height='12' rx='6' fill='%2364748b'/%3E%3Crect x='400' y='170' width='290' height='12' rx='6' fill='%2364748b' opacity='.7'/%3E%3Crect x='400' y='200' width='200' height='10' rx='5' fill='%23475569'/%3E%3Crect x='400' y='270' width='300' height='80' rx='12' fill='%230e2338'/%3E%3Crect x='420' y='292' width='200' height='10' rx='5' fill='%2394a3b8'/%3E%3Crect x='420' y='312' width='150' height='8' rx='4' fill='%23475569'/%3E%3C/svg%3E" alt="7086bt 创作者幕后纪实视频封面，剪辑台与人物剪影" width="800" height="450">
+            <span class="bt-thumb-play">播放</span>
+          </div>
+          <div class="bt-video-body">
+            <div class="bt-tag-row"><span class="bt-tag">创作幕后</span><span class="bt-tag">人物访谈</span></div>
+            <h3 class="bt-h3">从草稿到成片：7086bt 创作者的一天</h3>
+            <p style="font-size:.85rem;color:var(--bt-muted);margin:0">跟拍三位社区创作者，记录选题会、拍摄与剪辑的完整流程，呈现 7086bt 内容生态中真实、温暖的一面。</p>
+            <div class="bt-video-meta"><span>阿岚Lann</span><span>播放 9.8万</span><span>点赞 6,731</span><span>收藏 2,048</span></div>
+            <div class="bt-video-actions">
+              <button class="bt-act" type="button" data-bt-like>点赞</button>
+              <button class="bt-act" type="button" data-bt-save>收藏</button>
+              <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bt-video-card">
+          <div class="bt-thumb">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='v3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230d2a26'/%3E%3Cstop offset='1' stop-color='%230b1a2e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23v3)'/%3E%3Crect x='60' y='60' width='680' height='330' rx='20' fill='%230c1f22' stroke='%2334d399' stroke-opacity='.4'/%3E%3Ccircle cx='150' cy='150' r='34' fill='%2334d399' opacity='.8'/%3E%3Crect x='210' y='132' width='320' height='14' rx='7' fill='%2334d399' opacity='.8'/%3E%3Crect x='210' y='160' width='230' height='10' rx='5' fill='%23475569'/%3E%3Crect x='100' y='230' width='420' height='10' rx='5' fill='%2394a3b8' opacity='.8'/%3E%3Crect x='100' y='254' width='360' height='10' rx='5' fill='%23475569'/%3E%3Crect x='100' y='278' width='300' height='10' rx='5' fill='%23475569'/%3E%3Crect x='560' y='225' width='140' height='120' rx='12' fill='%230e2e2a'/%3E%3Cpath d='M605 260l60 30-60 30z' fill='%2334d399'/%3E%3C/svg%3E" alt="7086bt 站内搜索与内容索引教程封面，清单与播放按钮" width="800" height="450">
+            <span class="bt-thumb-play">播放</span>
+          </div>
+          <div class="bt-video-body">
+            <div class="bt-tag-row"><span class="bt-tag">实用技巧</span><span class="bt-tag">教程干货</span></div>
+            <h3 class="bt-h3">3 步找到 7086bt 精品内容：站内索引攻略</h3>
+            <p style="font-size:.85rem;color:var(--bt-muted);margin:0">分享在 7086bt 官方网站内使用搜索、标签与专题索引快速定位优质视频的方法，适合新加入社区的用户。</p>
+            <div class="bt-video-meta"><span>内容运营组</span><span>播放 7.2万</span><span>点赞 4,105</span><span>收藏 1,886</span></div>
+            <div class="bt-video-actions">
+              <button class="bt-act" type="button" data-bt-like>点赞</button>
+              <button class="bt-act" type="button" data-bt-save>收藏</button>
+              <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bt-video-card">
+          <div class="bt-thumb">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='v4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b1430'/%3E%3Cstop offset='1' stop-color='%23210f22'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23v4)'/%3E%3Crect x='90' y='80' width='260' height='300' rx='18' fill='%23140e24' stroke='%23fbbf24' stroke-opacity='.55'/%3E%3Ccircle cx='220' cy='180' r='54' fill='%23fbbf24' opacity='.75'/%3E%3Cpath d='M200 156l52 24-52 24z' fill='%23140e24'/%3E%3Crect x='390' y='100' width='320' height='16' rx='8' fill='%23fbbf24' opacity='.6'/%3E%3Crect x='390' y='134' width='240' height='12' rx='6' fill='%2364748b'/%3E%3Crect x='390' y='162' width='280' height='12' rx='6' fill='%2364748b' opacity='.7'/%3E%3Crect x='390' y='210' width='180' height='90' rx='12' fill='%231d1430'/%3E%3Crect x='410' y='232' width='120' height='10' rx='5' fill='%2394a3b8'/%3E%3Crect x='410' y='252' width='90' height='8' rx='4' fill='%23475569'/%3E%3C/svg%3E" alt="7086bt 社区口碑访谈视频封面，人物与评分星形元素" width="800" height="450">
+            <span class="bt-thumb-play">播放</span>
+          </div>
+          <div class="bt-video-body">
+            <div class="bt-tag-row"><span class="bt-tag">人物访谈</span><span class="bt-tag">社区口碑</span></div>
+            <h3 class="bt-h3">他们为什么留在 7086bt：五位老用户聊聊</h3>
+            <p style="font-size:.85rem;color:var(--bt-muted);margin:0">从画质、社区氛围到创作者扶持，五位长期用户讲述自己与 7086bt 的故事，呈现平台值得信赖的一面。</p>
+            <div class="bt-video-meta"><span>木木Mumu</span><span>播放 6.4万</span><span>点赞 3,882</span><span>收藏 1,240</span></div>
+            <div class="bt-video-actions">
+              <button class="bt-act" type="button" data-bt-like>点赞</button>
+              <button class="bt-act" type="button" data-bt-save>收藏</button>
+              <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="bt-list" aria-label="更多文字视频条目">
+        <article class="bt-list-item">
+          <div>
+            <h3>7086bt 地址已失效后的 5 个常见问题 | 官方答疑</h3>
+            <p>集中回答地址变更、收藏失效与内容迁移的疑问，附图文步骤与官方说明入口。</p>
+          </div>
+          <div class="bt-list-meta">官方运营组<br>播放 5.1万</div>
+          <div class="bt-list-cta">
+            <button class="bt-act" type="button" data-bt-like>点赞</button>
+            <button class="bt-act" type="button" data-bt-save>收藏</button>
+            <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+          </div>
+        </article>
+        <article class="bt-list-item">
+          <div>
+            <h3>城市夜行记录：7086bt 社区影像计划第 03 期</h3>
+            <p>三位创作者用手机记录城市夜晚的灯光与街道，呈现 7086bt 社区真实、细腻的影像表达。</p>
+          </div>
+          <div class="bt-list-meta">夜航Nova<br>播放 4.7万</div>
+          <div class="bt-list-cta">
+            <button class="bt-act" type="button" data-bt-like>点赞</button>
+            <button class="bt-act" type="button" data-bt-save>收藏</button>
+            <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+          </div>
+        </article>
+        <article class="bt-list-item">
+          <div>
+            <h3>用 7086bt 学剪辑：三个转场让画面更高级</h3>
+            <p>面向新手的剪辑教程，讲解遮罩转场、速度斜坡与声音衔接，配合站内素材包下载说明。</p>
+          </div>
+          <div class="bt-list-meta">剪辑师老周<br>播放 4.2万</div>
+          <div class="bt-list-cta">
+            <button class="bt-act" type="button" data-bt-like>点赞</button>
+            <button class="bt-act" type="button" data-bt-save>收藏</button>
+            <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+          </div>
+        </article>
+        <article class="bt-list-item">
+          <div>
+            <h3>7086bt 品牌故事：从一间剪辑室开始的八年</h3>
+            <p>以时间线回访品牌创立初期的合作者，讲述内容生态如何一步步形成，强调持续运营与用户至上。</p>
+          </div>
+          <div class="bt-list-meta">品牌档案室<br>播放 3.9万</div>
+          <div class="bt-list-cta">
+            <button class="bt-act" type="button" data-bt-like>点赞</button>
+            <button class="bt-act" type="button" data-bt-save>收藏</button>
+            <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+          </div>
+        </article>
+        <article class="bt-list-item">
+          <div>
+            <h3>本周社区挑战：用 60 秒讲清一个知识点</h3>
+            <p>7086bt 官方发起的新一期创意挑战，鼓励创作者用短视频做知识科普，优秀作品将获得首页推荐。</p>
+          </div>
+          <div class="bt-list-meta">官方活动组<br>播放 3.3万</div>
+          <div class="bt-list-cta">
+            <button class="bt-act" type="button" data-bt-like>点赞</button>
+            <button class="bt-act" type="button" data-bt-save>收藏</button>
+            <button class="bt-act" type="button" data-bt-copy>复制链接</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 品牌解析 / 深度说明 -->
+    <section class="bt-wrap bt-section" id="btEssay" aria-labelledby="btEssayTitle">
+      <p class="bt-kicker">品牌解析 · 深度说明</p>
+      <h2 class="bt-h2" id="btEssayTitle">7086bt 地址已失效背后：内容生态与品牌价值解读</h2>
+      <div class="bt-essay">
+        <p>当「7086bt 地址已失效」成为社区里的高频搜索词，我们想说清楚一件事：失效的只是旧访问路径，而不是 7086bt 这个品牌本身。作为持续运营的视频内容平台，7086bt 官方网站始终把用户至上的原则放在首位，每一次技术调整都以不打断创作者发布、不降低观看体验为前提。下面从品牌定位、内容策略、社区运营与未来方向四个角度展开说明。</p>
+
+        <h3>一、7086bt 是什么：一个垂直领域的原创视频品牌</h3>
+        <p>7086bt 并不是一个突然出现的名字。它最早由几位视频爱好者在一间不足二十平方米的剪辑室里发起，从设备评测、剪辑技巧与创作幕后起步，逐步形成以原创高清视频为核心的内容生态。与追求大而全的开放平台不同，7086bt 深耕视频创作垂直领域，把有限资源集中投入在选题策划、拍摄支持与创作者成长上。官网首页的每一支精品内容，都经过编辑初筛、内容复核与上线前检查，保留真实、可复用的经验。地址变更不等于品牌注销，7086bt 官方网站的品牌介绍、企业动态与官方发布栏目都保持正常更新，这也是我们回应「地址已失效」最直接的方式。</p>
+
+        <h3>二、内容策略：精品内容与社区记录并行</h3>
+        <p>7086bt 的内容结构可以分为两条线。一条是官方出品的精品内容，包括品牌说明、行业观察、实用技巧与深度测评，更新节奏稳定，适合第一次接触 7086bt 的用户建立基本认知；另一条是社区创作者上传的日常记录与兴趣同好内容，题材覆盖城市探索、生活方式、手作过程与户外活动。两条线并不是彼此割裂：官方会把社区中反响较好的选题整理为专题企划，创作者也能参与官方发起的创意挑战与比赛报名。为了让内容更易检索，7068bt 的站内索引对标题、标签与作者做了多重关联，这也是我们在地址调整后优先恢复的功能之一。对用户来说，收藏夹里的旧链接可能打不开，但通过官网首页的精品内容入口，仍能找到同一批创作者与同一批视频。</p>
+
+        <h3>三、社区运营：从创作者到用户的双向陪伴</h3>
+        <p>一个视频品牌能不能持续运营，关键看社区是否活跃。7086bt 的运营团队规模不大，但长期坚持三件事：第一，每位新入驻创作者的投稿在 48 小时内给出反馈，哪怕只是排版建议；第二，每月组织一次主题征集，选题由社区投票产生，避免闭门造车；第三，评论区的互动不做机械回复，运营人员会以真实身份参与讨论。这些做法看起来琐碎，却让 7086bt 在用户口碑中形成了温暖、值得信赖的印象。本次地址调整期间，我们在公告条与帮助中心同步发布说明，并保留了投稿与反馈入口，确保创作者的创作节奏不受影响。社区里的用户评价与短评，也构成了品牌最生动的注脚。</p>
+
+        <h3>四、未来方向：高清、正版与更开放的创作支持</h3>
+        <p>面向后续发展，7086bt 会继续把高清与正版作为基础要求，同时逐步开放更多创作支持能力，包括素材下载、剪辑模板与选题灵感提示。我们并不追求短期流量数字，而是希望用稳定的精品内容积累口碑，让 7086bt 成为一个让人愿意反复回来的视频内容社区。地址失效只是运营过程中的一次技术变动，官方会通过公告、FAQ 与品牌动态持续同步进展。对于关注品牌成长的用户，可以订阅官方更新、参与社区挑战，或者直接通过投稿入口提交作品。我们相信，真正决定一个视频品牌生命力的，是内容是否真实、创作者是否被尊重，而不是某个入口能否打开。</p>
+
+        <blockquote>7086bt 官方提示：请以官网首页与公告栏发布的信息为准。任何私下流传的访问方式都不代表官方渠道，遇到异常页面可通过反馈入口联系我们核实。</blockquote>
+      </div>
+    </section>
+
+    <!-- 图文索引 -->
+    <section class="bt-wrap bt-section" id="btIndex" aria-labelledby="btIndexTitle">
+      <p class="bt-kicker">图文索引 · 内容导览</p>
+      <h2 class="bt-h2" id="btIndexTitle">7086bt 专题索引：按主题找到你关心的内容</h2>
+      <p class="bt-lead">从品牌说明到创作技巧，以下索引整理了社区近期关注度较高的内容方向，便于快速进入对应板块。</p>
+      <div class="bt-index">
+        <article class="bt-index-card">
+          <div class="bt-thumb">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='i1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230d1e33'/%3E%3Cstop offset='1' stop-color='%230b2f3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23i1)'/%3E%3Crect x='80' y='90' width='300' height='200' rx='16' fill='%230b1728' stroke='%2338bdf8' stroke-opacity='.5'/%3E%3Cpath d='M200 140l80 50-80 50z' fill='%2338bdf8'/%3E%3Crect x='430' y='110' width='290' height='14' rx='7' fill='%2338bdf8' opacity='.7'/%3E%3Crect x='430' y='142' width='220' height='10' rx='5' fill='%2364748b'/%3E%3Crect x='430' y='166' width='250' height='10' rx='5' fill='%2364748b' opacity='.7'/%3E%3Crect x='80' y='330' width='640' height='12' rx='6' fill='%23475569'/%3E%3Crect x='80' y='360' width='480' height='12' rx='6' fill='%23475569' opacity='.7'/%3E%3C/svg%3E" alt="7086bt 地址失效说明专题索引封面，播放界面与说明文字" width="800" height="500">
+          </div>
+          <div class="bt-index-body">
+            <h3 class="bt-h3">地址调整与官方说明</h3>
+            <p>集中整理 7086bt 地址变更相关公告、答疑与视频说明，按时间顺序排列，方便新老用户核对信息。</p>
+          </div>
+        </article>
+        <article class="bt-index-card">
+          <div class="bt-thumb">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='i2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23201330'/%3E%3Cstop offset='1' stop-color='%23101b2e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23i2)'/%3E%3Ccircle cx='240' cy='230' r='110' fill='%23f472b6' opacity='.22'/%3E%3Ccircle cx='440' cy='180' r='70' fill='%2338bdf8' opacity='.25'/%3E%3Crect x='160' y='320' width='480' height='16' rx='8' fill='%23f472b6' opacity='.6'/%3E%3Crect x='200' y='352' width='380' height='12' rx='6' fill='%2364748b'/%3E%3Ccircle cx='560' cy='260' r='46' fill='none' stroke='%23f472b6' stroke-width='4'/%3E%3C/svg%3E" alt="7086bt 创作幕后专题索引封面，抽象人物与色彩圆点" width="800" height="500">
+          </div>
+          <div class="bt-index-body">
+            <h3 class="bt-h3">创作幕后与人物访谈</h3>
+            <p>走进创作者的拍摄现场与剪辑桌，了解一支 7086bt 视频从想法到成片的完整过程，感受真实创作状态。</p>
+          </div>
+        </article>
+        <article class="bt-index-card">
+          <div class="bt-thumb">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='i3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23102b28'/%3E%3Cstop offset='1' stop-color='%231a2418'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23i3)'/%3E%3Crect x='100' y='100' width='600' height='90' rx='14' fill='%230d2220' stroke='%2334d399' stroke-opacity='.5'/%3E%3Ccircle cx='150' cy='145' r='22' fill='%2334d399' opacity='.8'/%3E%3Crect x='190' y='130' width='300' height='12' rx='6' fill='%2334d399' opacity='.65'/%3E%3Crect x='190' y='154' width='190' height='10' rx='5' fill='%23475569'/%3E%3Crect x='100' y='220' width='600' height='90' rx='14' fill='%230d2220' stroke='%2334d399' stroke-opacity='.25'/%3E%3Crect x='140' y='252' width='280' height='12' rx='6' fill='%2394a3b8'/%3E%3Crect x='100' y='340' width='600' height='90' rx='14' fill='%230d2220' stroke='%2334d399' stroke-opacity='.25'/%3E%3Crect x='140' y='372' width='340' height='12' rx='6' fill='%2394a3b8'/%3E%3C/svg%3E" alt="7086bt 创作技巧清单专题索引封面，条目列表与勾选图形" width="800" height="500">
+          </div>
+          <div class="bt-index-body">
+            <h3 class="bt-h3">实用技巧与剪辑清单</h3>
+            <p>面向创作者的剪辑、拍摄与选题技巧合集，以清单和步骤为主，适合边看边练，提升内容品质。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 作者区：双列简介 -->
+    <section class="bt-wrap bt-section" id="btAuthors" aria-labelledby="btAuthorsTitle">
+      <p class="bt-kicker">创作者矩阵 · 社区力量</p>
+      <h2 class="bt-h2" id="btAuthorsTitle">7086bt 创作者名录：与你一起持续成长的伙伴</h2>
+      <p class="bt-lead">他们长期在 7086bt 发布原创内容，覆盖访谈、教程、城市记录与生活方式等方向。点击可查看更完整的作者档案。</p>
+      <div class="bt-authors">
+        <article class="bt-author">
+          <div class="bt-avatar bt-avatar-a" aria-hidden="true">岚</div>
+          <div class="bt-author-info">
+            <h3>阿岚Lann</h3>
+            <div class="bt-author-field">创作幕后 / 人物访谈</div>
+            <div class="bt-author-stat">作品 86 · 粉丝 12.4万</div>
+            <p>7086bt 社区早期创作者之一，擅长用纪实镜头记录创作者真实状态，作品节奏克制、细节扎实，长期参与官方专题企划。</p>
+            <button class="bt-author-more" type="button" data-bt-author="阿岚Lann：7086bt 社区签约创作者，擅长纪实与访谈，代表作《从草稿到成片》。">查看简介</button>
+          </div>
+        </article>
+        <article class="bt-author">
+          <div class="bt-avatar bt-avatar-b" aria-hidden="true">木</div>
+          <div class="bt-author-info">
+            <h3>木木Mumu</h3>
+            <div class="bt-author-field">生活方式 / 日常记录</div>
+            <div class="bt-author-stat">作品 103 · 粉丝 9.8万</div>
+            <p>专注生活方式影像，喜欢用短镜头拼接日常片段，画面温暖、文案真诚。她认为 7086bt 最珍贵的是社区里愿意认真评论的人。</p>
+            <button class="bt-author-more" type="button" data-bt-author="木木Mumu：生活方式视频创作者，更新稳定，擅长把平凡日常拍出温度。">查看简介</button>
+          </div>
+        </article>
+        <article class="bt-author">
+          <div class="bt-avatar bt-avatar-c" aria-hidden="true">周</div>
+          <div class="bt-author-info">
+            <h3>剪辑师老周</h3>
+            <div class="bt-author-field">教程干货 / 实用技巧</div>
+            <div class="bt-author-stat">作品 64 · 粉丝 7.3万</div>
+            <p>从业十年的剪辑师，在 7086bt 持续更新剪辑教程与素材使用方法。讲课风格直接，喜欢用对照案例说明问题，是许多新人的入门老师。</p>
+            <button class="bt-author-more" type="button" data-bt-author="剪辑师老周：十年剪辑经验，7086bt 教程类创作者，主张把复杂技巧讲简单。">查看简介</button>
+          </div>
+        </article>
+        <article class="bt-author">
+          <div class="bt-avatar bt-avatar-d" aria-hidden="true">夜</div>
+          <div class="bt-author-info">
+            <h3>夜航Nova</h3>
+            <div class="bt-author-field">城市探索 / 户外活动</div>
+            <div class="bt-author-stat">作品 71 · 粉丝 6.6万</div>
+            <p>城市夜行记录者，常带着相机在深夜街区行走，用光影呈现城市另一面。参与 7086bt 社区影像计划多期，并负责部分线下活动的影像记录。</p>
+            <button class="bt-author-more" type="button" data-bt-author="夜航Nova：城市夜行影像创作者，7086bt 社区影像计划参与者，关注城市与人的关系。">查看简介</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 评论与口碑 -->
+    <section class="bt-wrap bt-section" id="btReviews" aria-labelledby="btReviewsTitle">
+      <p class="bt-kicker">社区口碑 · 真实反馈</p>
+      <h2 class="bt-h2" id="btReviewsTitle">7086bt 用户评价：他们这样描述这个视频社区</h2>
+      <div class="bt-score">
+        <div><b>4.9</b> <small>/ 5 综合口碑</small></div>
+        <div><b>96.4万</b> <small>累计互动</small></div>
+        <div><b>8年</b> <small>持续运营</small></div>
+      </div>
+      <div class="bt-comments">
+        <article class="bt-comment">
+          <header><span>云边小卖部</span><span class="bt-stars">★★★★★</span></header>
+          <p>地址失效那天我确实有点慌，后来在官网公告看到说明才放心。内容没有丢，搜索还能找到以前收藏的剪辑教程。</p>
+        </article>
+        <article class="bt-comment">
+          <header><span>周末拍片人</span><span class="bt-stars">★★★★☆</span></header>
+          <p>7086bt 的教程质量比较稳，不会为了流量堆废话。老周那期转场教程我看了三遍，直接用在项目里了。</p>
+        </article>
+        <article class="bt-comment">
+          <header><span>南岸旧巷</span><span class="bt-stars">★★★★★</span></header>
+          <p>喜欢这里的城市记录内容，镜头不炫技，但很有生活感。希望官方多办社区挑战，让普通创作者也有被看见的机会。</p>
+        </article>
+        <article class="bt-comment">
+          <header><span>橙子汽水</span><span class="bt-stars">★★★★☆</span></header>
+          <p>界面挺清楚的，就是第一次找投稿入口花了点时间。建议把投稿按钮放得更明显一些，新用户会更友好。</p>
+        </article>
+        <article class="bt-comment">
+          <header><span>一只键盘侠</span><span class="bt-stars">★★★★★</span></header>
+          <p>最打动我的是评论区氛围，大家都挺认真在聊内容。7086bt 官方回复也不敷衍，这点很难得。</p>
+        </article>
+        <article class="bt-comment">
+          <header><span>山间信号</span><span class="bt-stars">★★★★☆</span></header>
+          <p>画质和加载速度都不错，户外内容看起来很清楚。地址变更期间体验有点波动，现在恢复正常了。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 品牌动态 + 合作 -->
+    <section class="bt-wrap bt-section" id="btNews" aria-labelledby="btNewsTitle">
+      <p class="bt-kicker">官方动态 · 合作生态</p>
+      <h2 class="bt-h2" id="btNewsTitle">7086bt 企业动态与合作伙伴</h2>
+      <div class="bt-two-col">
+        <div>
+          <h3 class="bt-h3" style="margin-bottom:8px">近期更新</h3>
+          <ul class="bt-news" style="list-style:none;padding:0;margin:0">
+            <li><time datetime="2026-11-20">2026-11-20</time>官方发布《关于 7086bt 访问地址变更的说明》，同步更新公告栏与帮助中心。</li>
+            <li><time datetime="2026-11-16">2026-11-16</time>社区影像计划第 03 期上线，三位创作者的城市夜行记录已可在线观看。</li>
+            <li><time datetime="2026-11-09">2026-11-09</time>7086bt 剪辑教程专区完成索引优化，新增按难度筛选与素材下载说明。</li>
+            <li><time datetime="2026-10-30">2026-10-30</time>新一期创意挑战开放报名，主题为“60 秒讲清一个知识点”。</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="bt-h3" style="margin-bottom:8px">合作品牌</h3>
+          <ul class="bt-partners">
+            <li><b>光影器材社</b><small>设备支持</small></li>
+            <li><b>南岸文创</b><small>线下空间</small></li>
+            <li><b>云帆音乐</b><small>声音合作</small></li>
+            <li><b>拾光印刷</b><small>物料合作</small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bt-wrap bt-section" id="btFaq" aria-labelledby="btFaqTitle">
+      <p class="bt-kicker">帮助中心 · 常见问题</p>
+      <h2 class="bt-h2" id="btFaqTitle">7086bt 地址已失效相关 FAQ</h2>
+      <div class="bt-faq">
+        <details open>
+          <summary>7086bt 地址已失效，是否意味着平台停止运营？</summary>
+          <p>不是。地址调整属于技术层面的变更，7086bt 品牌与内容团队均正常运营，官方网站、公告栏与投稿入口保持开放。</p>
+        </details>
+        <details>
+          <summary>之前收藏的 7086bt 视频还能找到吗？</summary>
+          <p>大部分内容已重新整理进索引。可在官网首页使用搜索或专题索引，按标题、作者或标签查找；仍找不到时可通过反馈入口提交原链接。</p>
+        </details>
+        <details>
+          <summary>如何确认我看到的是 7086bt 官方发布的信息？</summary>
+          <p>官方信息统一发布在官网公告栏、帮助中心与品牌动态栏目，公告条会标注“官方发布”或“最新公告”。请勿轻信非官方渠道的私下链接。</p>
+        </details>
+        <details>
+          <summary>创作者投稿是否会因为地址调整而中断？</summary>
+          <p>不会。投稿入口在页面底部的辅助区与首屏按钮均可进入，审核团队保持原有节奏，48 小时内给出反馈。</p>
+        </details>
+        <details>
+          <summary>7086bt 的精品内容多久更新一次？</summary>
+          <p>官方精选内容通常每周更新 1 至 2 期，社区内容持续更新。专题企划与创意挑战按活动周期发布，具体以公告为准。</p>
+        </details>
+        <details>
+          <summary>可以在 7086bt 下载视频或素材吗？</summary>
+          <p>部分教程类内容提供官方素材包下载，请在对应视频详情中查看说明。所有内容仅限学习与创作参考，请尊重原创版权。</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bt-footer">
+    <div class="bt-wrap">
+      <div class="bt-footer-grid">
+        <div>
+          <div class="bt-logo" style="margin-bottom:10px">
+            <span class="bt-logo-mark" aria-hidden="true">70</span>
+            <span>7086bt<small>OFFICIAL VIDEO</small></span>
+          </div>
+          <p>7086bt 官方网站，持续运营的原创高清视频内容平台。关注品牌故事、企业动态与社区创作，用真实影像连接创作者与用户。</p>
+        </div>
+        <div>
+          <h4>内容入口</h4>
+          <ul>
+            <li><a href="#btVideos">精品内容</a></li>
+            <li><a href="#btIndex">专题索引</a></li>
+            <li><a href="#btAuthors">创作者名录</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>官方服务</h4>
+          <ul>
+            <li><a href="#btFaq">帮助中心</a></li>
+            <li><a href="#btNews">官方动态</a></li>
+            <li><a href="#" data-bt-modal="submitModal">投稿与报名</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>关于我们</h4>
+          <ul>
+            <li><a href="#btEssay">品牌解析</a></li>
+            <li><a href="#btReviews">社区口碑</a></li>
+            <li><a href="#" data-bt-modal="feedbackModal">反馈建议</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bt-footer-bottom">
+        <span>© 2026 7086bt 官方网站 · 版权所有 · 持续运营中</span>
+        <span>品牌备案号：7086-BT-2026 · 内容均受版权保护</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 弹层：投稿 -->
+  <div class="bt-modal-mask" id="submitModal" role="dialog" aria-modal="true" aria-labelledby="submitModalTitle">
+    <div class="bt-modal">
+      <button class="bt-modal-close" type="button" data-bt-close aria-label="关闭">×</button>
+      <h3 id="submitModalTitle">7086bt 投稿与报名</h3>
+      <p>欢迎向 7086bt 官方提交原创作品或报名参与社区创意挑战。提交后运营团队会在 48 小时内查看。</p>
+      <form id="btSubmitForm">
+        <label class="bt-field">作品标题<input type="text" required placeholder="例如：城市夜行记录·第 04 期"></label>
+        <label class="bt-field">联系方式<input type="text" required placeholder="邮箱或常用账号"></label>
+        <label class="bt-field">作品简介<textarea rows="3" placeholder="简单介绍内容方向与时长"></textarea></label>
+        <div class="bt-btn-row" style="margin-top:16px">
+          <button class="bt-btn bt-btn-primary" type="submit">提交</button>
+          <button class="bt-btn bt-btn-ghost" type="button" data-bt-close>取消</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 弹层：反馈 -->
+  <div class="bt-modal-mask" id="feedbackModal" role="dialog" aria-modal="true" aria-labelledby="feedbackModalTitle">
+    <div class="bt-modal">
+      <button class="bt-modal-close" type="button" data-bt-close aria-label="关闭">×</button>
+      <h3 id="feedbackModalTitle">向 7086bt 官方反馈</h3>
+      <p>如果你遇到地址异常、内容缺失或页面问题，欢迎提交反馈。请勿在反馈中填写敏感个人信息。</p>
+      <form id="btFeedbackForm">
+        <label class="bt-field">问题描述<textarea rows="4" required placeholder="请描述你遇到的情况"></textarea></label>
+        <div class="bt-btn-row" style="margin-top:16px">
+          <button class="bt-btn bt-btn-primary" type="submit">提交反馈</button>
+          <button class="bt-btn bt-btn-ghost" type="button" data-bt-close>取消</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="bt-toast" id="btToast" role="status" aria-live="polite"></div>
+  <button class="bt-backtop" id="btBackTop" type="button" aria-label="回到顶部">↑</button>
+
+  <script>
+  (function(){
+    "use strict";
+
+    var toastEl = document.getElementById('btToast');
+    var toastTimer = null;
+    function toast(msg){
+      toastEl.textContent = msg;
+      toastEl.classList.add('is-on');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+    }
+
+    // 移动端导航折叠
+    var burger = document.getElementById('btBurger');
+    var nav = document.getElementById('btNav');
+    if(burger && nav){
+      burger.addEventListener('click', function(){
+        var open = nav.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.addEventListener('click', function(e){
+        if(e.target.tagName === 'A'){
+          nav.classList.remove('is-open');
+          burger.setAttribute('aria-expanded','false');
+        }
+      });
+    }
+
+    // 搜索反馈
+    var searchForm = document.getElementById('btSearchForm');
+    var searchInput = document.getElementById('btSearchInput');
+    var searchFeedback = document.getElementById('btSearchFeedback');
+    var searchIndex = [
+      {k:'7086bt 地址已失效', t:'官方三分钟说明视频'},
+      {k:'剪辑技巧', t:'剪辑师老周的实用教程'},
+      {k:'创作幕后', t:'阿岚Lann 的跟拍记录'},
+      {k:'城市夜行', t:'夜航Nova 的城市影像'},
+      {k:'社区口碑', t:'木木Mumu 的人物访谈'},
+      {k:'品牌故事', t:'品牌档案室的时间线内容'}
+    ];
+    if(searchForm){
+      searchForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        var q = (searchInput.value || '').trim();
+        if(!q){
+          searchFeedback.textContent = '请输入关键词，例如：地址说明、剪辑、创作者。';
+          return;
+        }
+        var hits = searchIndex.filter(function(item){
+          return item.k.indexOf(q) > -1 || item.t.indexOf(q) > -1;
+        });
+        if(hits.length){
+          searchFeedback.textContent = '找到 ' + hits.length + ' 条相关建议：' + hits.map(function(h){ return h.t; }).join('；') + '。';
+        }else{
+          searchFeedback.textContent = '暂未找到完全匹配的内容，可尝试“地址”“剪辑”“创作者”等关键词。';
+        }
+      });
+    }
+
+    // 点赞 / 收藏
+    document.addEventListener('click', function(e){
+      var likeBtn = e.target.closest('[data-bt-like]');
+      if(likeBtn){
+        var on = likeBtn.classList.toggle('is-liked');
+        likeBtn.textContent = on ? '已赞' : '点赞';
+        toast(on ? '已点赞，感谢支持 7086bt 官方内容' : '已取消点赞');
+        return;
+      }
+      var saveBtn = e.target.closest('[data-bt-save]');
+      if(saveBtn){
+        var saved = saveBtn.classList.toggle('is-saved');
+        saveBtn.textContent = saved ? '已收藏' : '收藏';
+        toast(saved ? '已加入收藏，可在官方索引中查看' : '已取消收藏');
+        return;
+      }
+    });
+
+    // 复制链接
+    document.addEventListener('click', function(e){
+      var copyBtn = e.target.closest('[data-bt-copy]');
+      if(!copyBtn) return;
+      var text = window.location.href;
+      function done(){ toast('链接已复制，可分享给社区好友'); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done, function(){ toast('复制失败，请手动选择地址栏链接'); });
+      }else{
+        try{
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          done();
+        }catch(err){
+          toast('复制失败，请手动选择地址栏链接');
+        }
+      }
+    });
+
+    // 作者弹窗
+    document.addEventListener('click', function(e){
+      var authorBtn = e.target.closest('[data-bt-author]');
+      if(!authorBtn) return;
+      var mask = document.getElementById('feedbackModal');
+      var info = authorBtn.getAttribute('data-bt-author');
+      if(mask){
+        var title = mask.querySelector('h3');
+        var p = mask.querySelector('p');
+        if(title) title.textContent = '创作者档案';
+        if(p) p.textContent = info;
+        mask.classList.add('is-open');
+      }
+    });
+
+    // 通用弹层
+    function openModal(id){
+      var mask = document.getElementById(id);
+      if(mask) mask.classList.add('is-open');
+    }
+    function closeAllModals(){
+      document.querySelectorAll('.bt-modal-mask.is-open').forEach(function(m){
+        m.classList.remove('is-open');
+      });
+    }
+    document.addEventListener('click', function(e){
+      var trigger = e.target.closest('[data-bt-modal]');
+      if(trigger){
+        e.preventDefault();
+        openModal(trigger.getAttribute('data-bt-modal'));
+        return;
+      }
+      if(e.target.closest('[data-bt-close]')){
+        closeAllModals();
+        return;
+      }
+      if(e.target.classList && e.target.classList.contains('bt-modal-mask')){
+        closeAllModals();
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape') closeAllModals();
+    });
+
+    // 表单提交
+    var submitForm = document.getElementById('btSubmitForm');
+    if(submitForm){
+      submitForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        closeAllModals();
+        submitForm.reset();
+        toast('投稿已提交，7086bt 运营团队会尽快查看');
+      });
+    }
+    var feedbackForm = document.getElementById('btFeedbackForm');
+    if(feedbackForm){
+      feedbackForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        closeAllModals();
+        feedbackForm.reset();
+        toast('反馈已收到，感谢帮助 7086bt 改进');
+      });
+    }
+
+    // 回到顶部
+    var backTop = document.getElementById('btBackTop');
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 600){
+        backTop.classList.add('is-on');
+      }else{
+        backTop.classList.remove('is-on');
+      }
+    }, {passive:true});
+    backTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  })();
+  </script>
+</body>
+</html>
